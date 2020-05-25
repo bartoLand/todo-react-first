@@ -1,0 +1,160 @@
+* {
+  text-align: center;
+}
+:root {
+  --size-main: 30px;
+  --size-input: 22px;
+  --size-header-todo: 30px;
+  --size-task: 25px;
+  --size-time: 60px;
+  --size-description: 20px;
+  --size-button: 20px;
+  --size-header-done: 24px;
+  --size-done-text: 15px;
+}
+/* add task */
+.app {
+  background-color: #f1dede;
+  border: rgb(116, 114, 114) solid 2px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+.header {
+  margin: 10px auto;
+  background-color: #dbcaca;
+  width: 90%;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.main {
+  font-size: var(--size-main);
+}
+
+.form {
+  background-color: #6cd4ff;
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+input {
+  background-color: #5d576b;
+  color: whitesmoke;
+  border: none;
+  border-radius: 25px;
+  padding: 9px;
+  margin: 10px;
+  width: 60%;
+  font-size: var(--size-input);
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+textarea {
+  background-color: #5d576b;
+  color: whitesmoke;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  height: 100px;
+  font-size: var(--size-input);
+}
+
+textarea::placeholder {
+  color: whitesmoke;
+  padding: 30px;
+}
+
+button {
+  background-color: rgb(196, 193, 193);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 25px;
+  margin: 5px 10px;
+  font-size: var(--size-button);
+}
+
+.btnDelete {
+  position: absolute;
+  right: 0;
+  margin: 7px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* list todo */
+div.active {
+  background-color: #fe938c;
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+.task {
+  background-color: #f6be9a;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 3px 4px 13px -4px rgba(0, 0, 0, 0.58);
+}
+
+.header-todo {
+  font-size: var(--size-header-todo);
+}
+
+.header-done {
+  font-size: var(--size-header-done);
+}
+
+div.done {
+  background-color: #d496a7;
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+.taskDone {
+  position: relative;
+  background-color: #a59898;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 10px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 3px 4px 13px -4px rgba(0, 0, 0, 0.58);
+}
+
+.task-name {
+  font-size: var(--size-task);
+}
+
+.time {
+  font-size: var(--size-time);
+  font-weight: bold;
+}
+
+.note {
+  font-size: var(--size-description);
+}
+
+.done-text {
+  font-size: var(--size-done-text);
+}
